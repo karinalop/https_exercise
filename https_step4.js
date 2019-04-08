@@ -21,6 +21,7 @@ function getHTML (options, action) {
   // (the `end` of the stream)
   response.on('end', function(){
     action(dataBuffer);
+  // in the 2nd parameter we should be defining a function and not calling a function right away?
   });
 
 });
@@ -35,7 +36,7 @@ var printHTML = function(data){
 
 var requestOptions = {
   host: 'sytantris.github.io',
-  path: '/http-examples/step3.html'
+  path: '/http-examples/step4.html'
 };
 
 
